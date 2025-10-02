@@ -43,3 +43,18 @@ jobs:
             git commit -m "chore(ci): build dist [skip ci]"
             git push
           fi
+
+      # NOVO: empacotar e publicar o artefato dist.zip para download
+      - name: Zip dist
+        run: |
+          cd dist
+          zip -r ../dist.zip .
+          cd -
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist.zip
+          if-no-files-found: error
+          retention-days: 7

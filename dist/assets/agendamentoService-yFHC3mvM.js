@@ -1,0 +1,1 @@
+import"./index-dGQXMBuU.js";const i=[{id:"dinheiro",nome:"Dinheiro",icon:"💵"},{id:"pix",nome:"PIX",icon:"📱"},{id:"cartao_debito",nome:"Cartão de Débito",icon:"💳"},{id:"cartao_credito",nome:"Cartão de Crédito",icon:"💳"},{id:"conta_corrente",nome:"Deixar na Conta",icon:"📋"},{id:"debito_mensal",nome:"Débito Mensal",icon:"📅",mensal:!0}];export{i as F};

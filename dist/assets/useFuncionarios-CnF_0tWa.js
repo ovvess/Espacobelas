@@ -1,0 +1,1 @@
+import{r as o,a8 as i}from"./index-dGQXMBuU.js";function f(){const[n,e]=o.useState([]),[c,t]=o.useState(!0),[u,r]=o.useState(null),s=async()=>{try{t(!0),r(null);const a=await i();e(a)}catch(a){r((a==null?void 0:a.message)||"Erro ao carregar funcionários")}finally{t(!1)}};return o.useEffect(()=>{s()},[]),{funcionarios:n,loading:c,error:u,reload:s}}export{f as u};
